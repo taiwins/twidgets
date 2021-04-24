@@ -1,0 +1,22 @@
+option('nkcairo',
+       type: 'feature',
+       value: 'enabled',
+       description: 'Enabling twidgets-cairo backend'
+)
+
+option('nkegl',
+       type: 'feature',
+       value: 'enabled',
+       description: 'Enabling twidgets-egl backend'
+)
+
+option('test',
+       type: 'feature',
+       value: 'enabled',
+       description: 'Enabling tests'
+)
+
+option('nklua',
+       type: 'feature',
+       value: 'enabled',
+       description: 'Enabling lua bindings')

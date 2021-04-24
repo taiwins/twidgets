@@ -1,0 +1,6 @@
+[submodule "include/twidgets/nuklear"]
+	path = include/twidgets/nuklear
+	url = https://github.com/Immediate-Mode-UI/Nuklear
+[submodule "include/nklua"]
+	path = include/nklua
+	url = https://github.com/xeechou/love-nuklear

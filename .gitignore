@@ -1,0 +1,7 @@
+build*
+compile_commands.json
+subprojects
+.ccls-cache/*
+.ccls-root
+.clangd
+.cache
