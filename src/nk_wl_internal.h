@@ -308,6 +308,7 @@ nk_wl_clean_app_surface(struct nk_wl_backend *bkend)
 	bkend->app_surface->user_data = NULL;
 	bkend->app_surface = NULL;
 	wl_array_release(&bkend->prev_cmds);
+	wl_array_init(&bkend->prev_cmds);
 	//re initialize the backend inputs
 	nk_wl_input_reset(&bkend->ctx);
 
@@ -346,6 +347,7 @@ nk_wl_backend_cleanup(struct nk_wl_backend *bkend)
 {
 	nk_wl_release_resources(bkend);
 	wl_array_release(&bkend->prev_cmds);
+	wl_array_init(&bkend->prev_cmds);
 	nk_free(&bkend->ctx);
 }
 
