@@ -53,7 +53,7 @@ find_package(Fontconfig REQUIRED)
 find_package(Freetype REQUIRED)
 find_package(UDEV REQUIRED)
 find_package(LibRSVG REQUIRED)
-find_package(twclient REQUIRED)
+find_package(twclient 0.2.1 REQUIRED)
 
 ###############################################################################
 # subdirs

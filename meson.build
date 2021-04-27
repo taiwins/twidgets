@@ -29,13 +29,13 @@ if get_option('buildtype') == 'release' and cc.has_argument('-fvisibility=hidden
 endif
 
 #find twclients if possible
-pj_twclient = subproject('twclient', required: false, version: '>=0.2')
+pj_twclient = subproject('twclient', required: false, version: '>=0.2.1')
 if pj_twclient.found()
   dep_twclient = pj_twclient.get_variable('dep_twclient')
   dep_twclient_icons = pj_twclient.get_variable('dep_twclient_icons')
 else
-  dep_twclient = dependency('twclient', version: '>=0.2')
-  dep_twclient_icons = dependency('twclient_icons', version: '>=0.2')
+  dep_twclient = dependency('twclient', version: '>=0.2.1')
+  dep_twclient_icons = dependency('twclient_icons', version: '>=0.2.1')
 endif
 
 inc_twidgets = include_directories('include')
