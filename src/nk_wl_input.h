@@ -201,6 +201,13 @@ nk_pointraxis(struct tw_appsurf *surf, const struct tw_app_event *e)
 	nk_input_end(&bkend->ctx);
 }
 
+static void
+nk_clrinput(struct tw_appsurf *surf)
+{
+	struct nk_wl_backend *bkend = (struct nk_wl_backend *)surf->user_data;
+	nk_input_begin(&bkend->ctx);
+	nk_input_end(&bkend->ctx);
+}
 
 #ifdef __cplusplus
 }

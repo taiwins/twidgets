@@ -154,6 +154,11 @@ nk_wl_new_frame(struct tw_appsurf *surf, const struct tw_app_event *e)
 	case TW_TIMER:
 		handled_input = true;
 		break;
+	case TW_FOCUS:
+	case TW_UNFOCUS:
+		nk_clrinput(surf);
+		handled_input = true;
+		break;
 	case TW_POINTER_MOTION:
 		nk_pointron(surf, e);
 		handled_input = true;
