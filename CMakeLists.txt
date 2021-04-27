@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12.0)
 project(twidgets
-  VERSION 0.1
+  VERSION 0.1.1
   LANGUAGES C)
 
 add_definitions(-D_GNU_SOURCE)
