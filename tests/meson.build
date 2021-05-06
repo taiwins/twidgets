@@ -1,4 +1,4 @@
-if get_option('nkcairo').enabled() and not get_option('test').enabled()
+if get_option('nkcairo').enabled() and get_option('test').enabled()
 
 nk_cairo_test = executable(
   'test-nk-cairo',
@@ -14,7 +14,7 @@ nk_cairo_test = executable(
 
 endif
 
-if get_option('nkegl').enabled() and not get_option('test').enabled()
+if get_option('nkegl').enabled() and get_option('test').enabled()
 
 nk_egl_test = executable(
   'test-nk-egl',
