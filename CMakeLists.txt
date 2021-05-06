@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12.0)
 project(twidgets
-  VERSION 0.1
+  VERSION 0.1.1
   LANGUAGES C)
 
 add_definitions(-D_GNU_SOURCE)
@@ -53,7 +53,7 @@ find_package(Fontconfig REQUIRED)
 find_package(Freetype REQUIRED)
 find_package(UDEV REQUIRED)
 find_package(LibRSVG REQUIRED)
-find_package(twclient REQUIRED)
+find_package(twclient 0.2.1 REQUIRED)
 
 ###############################################################################
 # subdirs

@@ -1,6 +1,6 @@
 find_package(PkgConfig)
-pkg_check_modules(TWCLIENT QUIET twclient>=0.1)
-pkg_check_modules(TWCLIENT_ICONS QUIET twclient-icons>=0.1)
+pkg_check_modules(TWCLIENT QUIET twclient>=twclient_FIND_VERSION)
+pkg_check_modules(TWCLIENT_ICONS QUIET twclient-icons>=twclient_FIND_VERSION)
 
 find_library(TWCLIENT_LOCATION NAMES twclient HINTS
   ${TWCLIENT_LIBRARY_DIRS})
